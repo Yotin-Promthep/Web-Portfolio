@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <style>
+        #detailInput {
+            display: none;
+        }
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <div id="stopwatch">00:00:00</div>
+    <button id="startStopButton">Start</button>
+    <div id="detailInput">
+        <input type="text" id="details" placeholder="Enter details...">
+        <button id="saveButton">Save</button>
+    </div>
+    <table id="savedTimesTable">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Details</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="../stopwatch/script.js"></script>
+</body>
+</html>

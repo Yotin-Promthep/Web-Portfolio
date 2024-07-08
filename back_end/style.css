@@ -1,0 +1,16 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 265px;
+    display: block;
+    z-index: 1002;
+    color: #FFF;
+    font-weight: 200;
+    box-shadow: 4px 4px 10px rgba(69, 65, 78, .06);
+}
+
+.sidebar[data-background-color=dark] {
+    background-color: #1a2035!important;
+}

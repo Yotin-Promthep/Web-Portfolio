@@ -1,0 +1,59 @@
+.logo-header {
+    margin-left: 20px;
+}
+
+.logo-header img {
+    height: 70px;
+}
+
+.nav-secondary {
+    padding: 0px;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.nav-item a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+    height: 40px;
+    align-items: center;
+}
+
+.nav-item a:hover {
+    background: rgba(0, 0, 0, .16);
+    background: rgba(0, 0, 0, .16);
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.nav-con .menu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-con .menu li {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+
+
+
+
+/* panel */
+
+.main-panel {
+    position: relative;
+    width: calc(100% - 265px);
+    height: 100vh;
+    min-height: 100%;
+    float: right;
+    transition: all .3s;
+}

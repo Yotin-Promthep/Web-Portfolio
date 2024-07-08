@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.anime-list {
+    margin-top: 20px;
+}
+
+.anime-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.anime-item:hover {
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.anime-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.anime-info {
+    color: #666;
+}
+
+/* Add styles for anime image */
+.anime-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    float: left;
+    margin-right: 10px;
+    border-radius: 8px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Screenshot Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .screenshot {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Website Screenshot Generator</h1>
+    <p>Enter the URL of a website and click "Generate Screenshot" to capture an image.</p>
+    <label for="url">Enter URL:</label>
+    <input type="text" id="url" placeholder="https://example.com">
+    <button onclick="generateScreenshot()">Generate Screenshot</button>
+    <div class="screenshot" id="screenshotContainer">
+      <!-- Screenshot will be displayed here -->
+    </div>
+  </div>
+
+  <script>
+    function generateScreenshot() {
+      var url = document.getElementById('url').value.trim();
+
+      // Simple validation to check if URL starts with http:// or https://
+      if (!url.toLowerCase().startsWith('http://') && !url.toLowerCase().startsWith('https://')) {
+        alert('Please enter a valid URL starting with http:// or https://');
+        return;
+      }
+
+      // Create an image element to display the screenshot
+      var img = new Image();
+      img.src = 'https://api.screenshotmachine.com/?key=YOUR_API_KEY&url=' + encodeURIComponent(url);
+
+      // Display the image in the screenshotContainer div
+      var screenshotContainer = document.getElementById('screenshotContainer');
+      screenshotContainer.innerHTML = '';
+      screenshotContainer.appendChild(img);
+    }
+  </script>
+</body>
+
+</html>

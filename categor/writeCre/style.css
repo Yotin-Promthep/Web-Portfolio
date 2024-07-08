@@ -1,0 +1,92 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .container {
+    justify-content: space-between;
+    max-width: 100%; /* Limit container width for better readability */
+    margin: 0 auto; /* Center align container */
+  }
+  
+  .input-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between input and output */
+    display: flex;
+  }
+  
+  .output-container {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    margin-bottom: 20px;
+  }
+
+  /* Textarea styles */
+  textarea {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+/* Textarea styles */
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical; /* Allow vertical resizing */
+    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    margin-bottom: 10px; /* Space between textareas */
+  }
+  
+  textarea:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #4CAF50; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Add a subtle box-shadow on focus */
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
